@@ -1,4 +1,3 @@
-import logging
 import json
 from src import mercadolibre_api as ml_api
 

@@ -1,5 +1,4 @@
 import requests
-from src import config
 
 def create_session():
     session = requests.Session()
@@ -11,9 +10,9 @@ def create_session():
     }
     data = {
         "grant_type": "refresh_token",
-        "client_id": config.client_id,
-        "client_secret": config.client_secret,
-        "refresh_token": config.refresh_token
+        "client_id": "2862196312543794",
+        "client_secret": "c6S0LVHrr3pj9vwcyqsFaalAkg3uxW1c",
+        "refresh_token": "TG-631285dbf2a8e5000162185f-357372489"
     }
     r = requests.post(url, headers=headers, data=data).json()
     access_token = r['access_token']
